@@ -1,90 +1,77 @@
 <!DOCTYPE html>
-<html lang="py-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fp Sellection</title>
+    <title>Fp Selection</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shafarik&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shafarik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <img src="./img/logo.png" alt="Logo">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Tênis</li>
-                    <li>Fale conosco</li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Tênis</li>
+                <li>Fale conosco</li>
+            </ul>
+        </nav>
     </header>
-    <section>
+
+    <section class="container">
         <div class="list">
             <div class="item active">
                 <div class="shoeimg">
                     <img src="./img/af1-removebg-preview.png" alt="Air Force 1">
                 </div>
                 <div class="content">
-                    <p class="shoe_info">
-                        The most popular Nike Shoe
-                    </p>
-                    <h2>
-                        Air Force 1
-                    </h2>
+                    <p class="shoe_info">The most popular Nike Shoe</p>
+                    <h2>Air Force 1</h2>
                     <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolore perspiciatis non repudiandae enim doloribus, qui cupiditate totam veritatis officiis. Possimus unde ullam adipisci incidunt rerum recusandae asperiores at odio.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <button class="information">
-                        Saiba Mais
-                    </button>
+                    <button class="information">Saiba Mais</button>
                 </div>
-                <div class="item">
-                    <div class="shoeimg">
-                        <img src="./img/jordan4__1_-removebg-preview.png" alt="Air Joran 1">
-                    </div>
-                    <div class="content">
-                        <p class="shoe_info">
-                            Michael Jordan heritage
-                        </p>
-                        <h2>
-                            Air Jordan 1
-                        </h2>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolore perspiciatis non repudiandae enim doloribus, qui cupiditate totam veritatis officiis. Possimus unde ullam adipisci incidunt rerum recusandae asperiores at odio.
-                        </p>
-                        <button class="information">
-                            Saiba Mais
-                        </button>
-                    </div>
-                    <div class="item">
-                        <div class="shoeimg">
-                            <img src="./img/nb550.png" alt="New Balance 550">
-                        </div>
-                        <div class="content">
-                            <p class="shoe_info">
-                                The New Balance Shoe Signature
-                            </p>
-                            <h2>
-                                New Balance 550
-                            </h2>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolore perspiciatis non repudiandae enim doloribus, qui cupiditate totam veritatis officiis. Possimus unde ullam adipisci incidunt rerum recusandae asperiores at odio.
-                            </p>
-                            <button class="information">
-                                Saiba Mais
-                            </button>
-                        </div>
+            </div>
+
+            <div class="item">
+                <div class="shoeimg">
+                    <img src="./img/jordan4__1_-removebg-preview.png" alt="Air Jordan 1">
+                </div>
+                <div class="content">
+                    <p class="shoe_info">Michael Jordan heritage</p>
+                    <h2>Air Jordan 1</h2>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="information">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="shoeimg">
+                    <img src="./img/nb550.png" alt="New Balance 550">
+                </div>
+                <div class="content">
+                    <p class="shoe_info">The New Balance Shoe Signature</p>
+                    <h2>New Balance 550</h2>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="information">Saiba Mais</button>
+                </div>
             </div>
         </div>
 
         <div class="arrows">
-            <button class="leftside"><img src="./img/arrow.png" alt="Seta esquerda"></button>
-            <button class="rightside"><img src="./img/arrow.png" alt="Seta direita"></button>
+            <button id="prev"><img src="./img/arrow.png" alt="Seta esquerda"></button>
+            <button id="next"><img src="./img/arrow.png" alt="Seta direita"></button>
         </div>
         
         <div class="indicators">
@@ -96,5 +83,6 @@
             </ul>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
